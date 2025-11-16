@@ -11,15 +11,15 @@ Current idea is to use an SVG like file that is edited on the GM side, and rende
 
 This could be donw with a wxPython GUI and using drawsvg for the backend.
 
-A map would be stored as a json file, in a separate folder for maps.
+A full map would be stored in a folder, with a json file (that has scale and fog of war, as well as token placement and status), and a set of pngs (tokens, objects, the map).
 
 I'm thinking there should be a shared library of map bitmaps and tokens.
 
 To-do:
 - Loading maps (which would be bitmaps, e.g. png).
-- Set grid size and offset.
+- Set scale (for tokens). Maybe grid size and offset. Options for hex-grids?
 - Option to load and place a large (unlimited?) amount of tokens.
-- Option to add fog-of-war shapes (rectangles, ellipses, free polygons).
+- Option to add fog-of-war shapes (rectangles, ellipses, free polygons) or a black "cover", in which we paintbruch transparent openings?.
 
 - Option to hide grid on the GM and/or Player side.
 - Option to hide tokens on the Player side (on the GM side... why?).
