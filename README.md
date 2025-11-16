@@ -11,6 +11,8 @@ Current idea is to use an SVG like file that is edited on the GM side, and rende
 
 This could be donw with a wxPython GUI and using drawsvg for the backend.
 
+https://pypi.org/project/drawsvg/
+
 A full map would be stored in a folder, with a json file (that has scale and fog of war, as well as token placement and status), and a set of pngs (tokens, objects, the map).
 
 I'm thinking there should be a shared library of map bitmaps and tokens.
